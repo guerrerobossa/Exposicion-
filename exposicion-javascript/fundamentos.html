@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exposicion — Fundamentos</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+ 
+  <header class="cabecera">
+    <h1>Exposicion</h1>
+    <p class="lema">Tema: JavaScript</p>
+  </header>
+
+  <nav class="menu">
+    <a href="#variables">Variables</a><br>
+    <a href="#datos">Datos</a><br>
+    <a href="#tipos-datos">Tipos de datos</a><br>
+    <a href="#asignacion">Operadores de asignación</a>
+</nav>
+ 
+  <nav class="menu">
+    <a href="index.html" class="activo">Qué es JavaScript</a>
+    <br>
+    <a href="fundamentos.html">Fundamentos</a>
+    <br>
+    <a href="control.html">Control del flujo</a>
+  </nav>
+ 
+  <main>
+
+
+    <section id="variables" class="tema">
+  <h2>¿Qué son las variables?</h2>
+  <!-- ① La explicación, con sus palabras -->
+  <p>
+    Una variable es como una caja donde podemos guardar información
+    para usarla más adelante en nuestro programa.
+  </p>
+  <!-- ② El código que se LEE -->
+  <h3>Así se ve</h3>
+<pre><code>let nombre = "Aris";
+console.log(nombre);</code></pre>
+
+
+  <!-- ③ El código que se EJECUTA -->
+  <h3>Pruébelo</h3>
+  <button id="btnVariables">Probar</button>
+  <p id="salidaVariables" class="salida"></p>
+  <!-- ④ El error frecuente -->
+  <h3>Cuidado con</h3>
+  <p class="aviso">
+    Escribir mal el nombre de la variable o intentar usarla antes de declararla.
+  </p>
+
+  <button id="btnEjemploVariables">Ejemplos</button>
+
+  <div id="ejemplosVariables" class="oculto">
+    <h2>Error común</h2>
+    <p>Declarar una variable como nombre y luego escribir Nombre.</p>
+
+    <h2>Uso correcto</h2>
+    <pre><code>let nombre = "Juan";
+console.log(nombre);</code></pre>
+  </div>
+
+</section>
+
+<section id="datos" class="tema">
+  <h2>¿Qué son los datos?</h2>
+
+  <p>
+    Los datos son la información que utiliza un programa para realizar
+    tareas o mostrar resultados.
+  </p>
+
+  <h3>Así se ve</h3>
+<pre><code>let edad = 17;
+let ciudad = "Cartagena";</code></pre>
+
+  <h3>Pruébelo</h3>
+  <button id="btnDatos">Probar</button>
+  <p id="salidaDatos" class="salida"></p>
+
+  <h3>Cuidado con</h3>
+  <p class="aviso">
+    No confundir los números con el texto.
+  </p>
+
+  <button id="btnEjemploDatos">Ejemplos</button>
+
+  <div id="ejemplosDatos" class="oculto">
+    <h2>Número</h2>
+    <p>25 es un dato numérico.</p>
+
+    <h2>Texto</h2>
+    <p>"25" es un dato de texto porque está entre comillas.</p>
+
+    <h2>Booleano</h2>
+    <p>true y false representan verdadero y falso.</p>
+  </div>
+</section>
+
+<section id="tipos-datos" class="tema">
+  <h2>Tipos de datos</h2>
+
+  <p>
+    Los tipos de datos indican qué clase de información estamos
+    almacenando en una variable.
+  </p>
+
+  <h3>Así se ve</h3>
+<pre><code>let nombre = "Aris";
+let edad = 17;
+let estudiante = true;</code></pre>
+
+  <h3>Pruébelo</h3>
+  <button id="btnTipos">Probar</button>
+  <p id="salidaTipos" class="salida"></p>
+
+  <h3>Cuidado con</h3>
+  <p class="aviso">
+    No mezclar tipos de datos sin saber cómo funciona JavaScript.
+  </p>
+
+  <button id="btnEjemploTipos">Ejemplos</button>
+
+  <div id="ejemplosTipos" class="oculto">
+    <h2>String</h2>
+    <p>Guarda texto: "Hola"</p>
+
+    <h2>Number</h2>
+    <p>Guarda numeros: 50</p>
+
+    <h2>Boolean</h2>
+    <p>Guarda verdadero o falso: true o false</p>
+  </div>
+</section>
+
+<section id="asignacion" class="tema">
+  <h2>Operadores de asignación</h2>
+
+  <p>
+    Los operadores de asignación sirven para guardar valores en una variable.
+  </p>
+
+  <h3>Así se ve</h3>
+<pre><code>let numero = 10;
+numero += 5;
+console.log(numero);</code></pre>
+
+  <h3>Pruébelo</h3>
+  <button id="btnAsignacion">Probar</button>
+  <p id="salidaAsignacion" class="salida"></p>
+
+  <h3>Cuidado con</h3>
+  <p class="aviso">
+    No confundir el operador de asignación (=) con los operadores de comparación (== y ===).
+  </p>
+
+  <button id="btnEjemploAsignacion">Ejemplos</button>
+
+  <div id="ejemplosAsignacion" class="oculto">
+    <h2>Asignación simple</h2>
+    <p>x = 5 asigna el valor 5 a la variable.</p>
+
+    <h2>Suma y asignación</h2>
+    <p>x += 3 equivale a x = x + 3.</p>
+
+    <h2>Error común</h2>
+    <p>if(x = 5) asigna el valor en vez de compararlo.</p>
+  </div>
+</section>
+
+    <br>
+ 
+  </main>
+ 
+  <footer class="pie">
+    <p>Aris Guerrero — Ficha 3230489 — <span id="anio"></span></p>
+  </footer>
+ 
+</body>
+</html>
