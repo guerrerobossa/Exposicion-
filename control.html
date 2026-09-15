@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exposicion — Qué es JavaScript</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+ 
+  <header class="cabecera">
+    <h1>Exposicion</h1>
+    <p class="lema">Tema: JavaScript</p>
+  </header>
+
+  <nav class="menu">
+    <a href="#condicionales">Condicionales</a><br>
+    <a href="#ciclos">Ciclos</a>
+</nav>
+ 
+  <nav class="menu">
+    <a href="index.html" class="activo">Qué es JavaScript</a>
+    <br>
+    <a href="fundamentos.html">Fundamentos</a>
+    <br>
+    <a href="control.html">Control del flujo</a>
+  </nav>
+ 
+  <main>
+ 
+    <section id="condicionales" class="tema">
+  <h2>¿Qué son los condicionales?</h2>
+
+  <p>
+    Los condicionales permiten que un programa tome decisiones.
+    Dependiendo de si una condición es verdadera o falsa,
+    se ejecutará una acción diferente.
+  </p>
+
+  <h3>Así se ve</h3>
+<pre><code>let edad = 18;
+
+if (edad >= 18) {
+    console.log("Es mayor de edad");
+} </code></pre>
+
+  <h3>Pruébelo</h3>
+  <button id="btnCondicionales">Probar</button>
+  <p id="salidaCondicionales" class="salida"></p>
+
+  <h3>Cuidado con</h3>
+  <p class="aviso">
+    No confundir el operador de asignación (=) con los operadores de comparación (== y ===).
+  </p>
+
+  <button id="btnEjemploCondicionales">Ejemplos</button>
+
+  <div id="ejemplosCondicionales" class="oculto">
+    <h2>If</h2>
+    <p>Ejecuta código cuando una condición es verdadera.</p>
+
+    <h2>If - Else</h2>
+    <p>Permite ejecutar una acción si la condición es verdadera y otra si es falsa.</p>
+
+    <h2>Ejemplo</h2>
+<pre><code>let nota = 4;
+
+if(nota >= 3){
+    console.log("Aprobó");
+}else{
+    console.log("Reprobó");
+}</code></pre>
+  </div>
+</section>
+    <br>
+<section id="ciclos" class="tema">
+  <h2>¿Qué son los ciclos?</h2>
+
+  <p>
+    Los ciclos son estructuras que permiten repetir instrucciones
+    varias veces sin tener que escribir el mismo código repetidamente.
+  </p>
+
+  <h3>Así se ve</h3>
+<pre><code>for(let i = 1; i <= 5; i++){
+    console.log(i);
+}</code></pre>
+
+  <h3>Pruébelo</h3>
+  <button id="btnCiclos">Probar</button>
+  <p id="salidaCiclos" class="salida"></p>
+
+  <h3>Cuidado con</h3>
+  <p class="aviso">
+    Tener cuidado con los ciclos infinitos, ya que pueden bloquear el programa.
+  </p>
+
+  <button id="btnEjemploCiclos">Ejemplos</button>
+
+  <div id="ejemplosCiclos" class="oculto">
+    <h2>Ciclo For</h2>
+    <p>Se utiliza cuando sabemos cuántas veces queremos repetir una acción.</p>
+
+<pre><code>for(let i = 1; i <= 3; i++){
+    console.log(i);
+}</code></pre>
+
+    <h2>Ciclo While</h2>
+    <p>Se ejecuta mientras una condición sea verdadera.</p>
+
+<pre><code>let contador = 1;
+
+while(contador <= 3){
+    console.log(contador);
+    contador++;
+}</code></pre>
+
+    <h2>Uso común</h2>
+    <p>Mostrar listas, recorrer arreglos o repetir procesos automáticamente.</p>
+  </div>
+</section>
+ 
+  </main>
+ 
+  <footer class="pie">
+    <p>Aris Guerrero — Ficha 3230489 — <span id="anio"></span></p>
+  </footer>
+ 
+</body>
+</html>

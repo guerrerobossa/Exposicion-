@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exposicion — Qué es JavaScript</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+ 
+  <header class="cabecera">
+    <h1>Exposicion</h1>
+    <p class="lema">Tema: JavaScript</p>
+  </header>
+ 
+  <nav class="menu">
+    <a href="index.html" class="activo">Qué es JavaScript</a>
+    <br>
+    <a href="fundamentos.html">Fundamentos</a>
+    <br>
+    <a href="control.html">Control del flujo</a>
+  </nav>
+ 
+  <main>
+ 
+    <section id="tema-que-es" class="tema">
+      <h2>1. Qué es JavaScript y para que sirve</h2>
+ 
+      <!-- ① La explicación, con sus palabras -->
+      <p>JavaScript es un lenguaje de programacion que se usa para dar inteactividad, <br> actividad y dinamismo al sitio web en tiempo real</p>
+ 
+      <!-- ② El código que se LEE -->
+      <h3>Así se ve</h3>
+<pre><code>let saludo = "Hola";
+console.log(saludo);</code></pre>
+ 
+      <!-- ③ El código que se EJECUTA -->
+      <h3>Pruébelo</h3>
+      <button id="btnSaludo">Saludar</button>
+      <p id="salidaSaludo" class="salida"></p>
+ 
+      <!-- ④ El error frecuente -->
+      <h3>Cuidado con</h3>
+      <p class="aviso">Confundir operadores de asignacion, usra vaiables no definidas y errores en sintaxis</p>
+      <button id="btnEjemploQueEs">Ejemplos</button>
+
+      <div id="Ejemplos" class="oculto">
+        <h2>Confundir Operadores De Asignacion</h2>
+        <p>confundir (=) con (== o ===)</p> 
+        <p>un ejemplo claro es que si escribimos, if (x = 5) estamos asignando para que x equivalga a 5,
+        <br> en lugar de verificar si x es igual a 5 con (x == 5)</p>
+        <br>
+        <h2>Errores de sintaxis</h2>
+        <p>Escribir miFuncion() y mifuncion</p>
+        <p>Olvidar que javaScript es sensible a las Mayusculas y Minusculas, <br>
+        esas Asignaciones son totalmente diferentes para el navegador</p>
+        <br>
+        <h2>Declaracion de variables y errores</h2>
+        <p>Declarar miVariable y despues llamarla mivariable</p>
+        <p>con el ejemplo de errores de sintaxis esta claro pero, <br>
+           declarar las variables y luego llamarlas con un caracter diferente puede traer dolores de cabeza y frustraciones <br>
+        ya que para el navegador son diferentes </p>
+        
+      </div>
+ 
+    </section>
+    <br>
+ 
+  </main>
+ 
+  <footer class="pie">
+    <p>Aris Guerrero — Ficha 3230489 — <span id="anio"></span></p>
+  </footer>
+ 
+</body>
+</html>
